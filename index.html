@@ -1,13 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/styles.css" rel="stylesheet">
-    <title>My Simple Todo</title>
+    <!-- <link href="/css/styles.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>My Simple ToDo</title>
 </head>
-<body>
-    <h1 class="text-9xl">Welcome</h1>    
+
+<body class="bg-[#fdf5f3]">
+    <!-- lists -->
+    <div>
+        <div>List</div>
+        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd"
+                    d="M2.24 6.8a.75.75 0 001.06-.04l1.95-2.1v8.59a.75.75 0 001.5 0V4.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0L2.2 5.74a.75.75 0 00.04 1.06zm8 6.4a.75.75 0 00-.04 1.06l3.25 3.5a.75.75 0 001.1 0l3.25-3.5a.75.75 0 10-1.1-1.02l-1.95 2.1V6.75a.75.75 0 00-1.5 0v8.59l-1.95-2.1a.75.75 0 00-1.06-.04z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+    </div>
+    <!-- new list -->
+    <div>
+        <div>New list</div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                <path
+                    d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+            </svg>
+        </div>
+        <div>Add</div>
+    </div>
+    <!-- to do  -->
+    <div>
+        <div>
+            <div>To-do</div>
+            <div>4</div>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                <path
+                    d="M3 10a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM8.5 10a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM15.5 8.5a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" />
+            </svg>
+
+        </div>
+    </div>
+    <!-- shopping list -->
+    <div>
+        <!-- shopping list header -->
+        <div>
+            <div>
+                <div>Shopping list</div>
+                <div>3</div>
+            </div>
+            <div>
+                <div>
+                    <div class="rounded-full">
+                        <a href="#" role="button">
+                            <img id="profile-image-3" class="rounded-full w-12"
+                                src="https://lh3.googleusercontent.com/ogw/AOh-ky1WVKo6zW2dtPEbZxVQinmKHuvOduJfl-ADAjvExg=s32-c-mo"
+                                srcset="https://lh3.googleusercontent.com/ogw/AOh-ky1WVKo6zW2dtPEbZxVQinmKHuvOduJfl-ADAjvExg=s32-c-mo 1x, https://lh3.googleusercontent.com/ogw/AOh-ky1WVKo6zW2dtPEbZxVQinmKHuvOduJfl-ADAjvExg=s64-c-mo 2x "
+                                alt="profile picture 3" aria-hidden="true" data-noaft="">
+                        </a>
+                    </div>
+                    <div>profile image 2</div>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                        <path
+                            d="M3 10a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM8.5 10a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM15.5 8.5a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" />
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+        <!-- shopping list items -->
+        <div>
+            <!-- fist item -->
+            <div>
+                <div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd"
+                                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        Bread
+                    </div>
+                </div>
+                <div>
+                    <div class="rounded-full">
+                        <a href="#" role="button">
+                            <img id="profile-image-3" class="rounded-full w-12"
+                                src="https://lh3.googleusercontent.com/ogw/AOh-ky1WVKo6zW2dtPEbZxVQinmKHuvOduJfl-ADAjvExg=s32-c-mo"
+                                srcset="https://lh3.googleusercontent.com/ogw/AOh-ky1WVKo6zW2dtPEbZxVQinmKHuvOduJfl-ADAjvExg=s32-c-mo 1x, https://lh3.googleusercontent.com/ogw/AOh-ky1WVKo6zW2dtPEbZxVQinmKHuvOduJfl-ADAjvExg=s64-c-mo 2x "
+                                alt="profile picture 3" aria-hidden="true" data-noaft="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- second item -->
+            <div>
+                <div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        Benanas
+                    </div>
+                </div>
+                <div>
+                    empty profile picture
+                </div>
+            </div>
+            <!-- third item -->
+            <div>
+                <div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        Blueberries
+                    </div>
+                </div>
+                <div>
+                    empty profile picture
+                </div>
+            </div>
+            <!-- add list item -->
+            <div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                        <path
+                            d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+                    </svg>
+                </div>
+                <div>List item</div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
