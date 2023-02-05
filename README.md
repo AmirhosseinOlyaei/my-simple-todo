@@ -44,11 +44,11 @@ cat >> tailwind.css
 @tailwind utilities;
 ^C
 
-	npx tailwindcss -i ./tailwind.css -o ./styles.css --watch
+npx tailwindcss -i ./tailwind.css -o ./styles.css --watch
 
-	*Add `<link href="styles.css" rel="stylesheet">` in index.html
+*Add `<link href="styles.css" rel="stylesheet">` in index.html
 
-	git add .
-	git commit -m "fixes # - bootstrapping tailwindcss"
-	git push -u origin
-	```
+git add .
+git commit -m "fixes # - bootstrapping tailwindcss"
+git push -u origin
+```
