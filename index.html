@@ -10,9 +10,9 @@
     <title>My Simple ToDo</title>
 </head>
 
-<body class="bg-[#fdf5f3]">
+<body class="bg-[#fdf5f3] m-2">
     <!-- lists -->
-    <div>
+    <div class="flex flex-row justify-between items-center border px-1 py-3">
         <div>List</div>
         <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                 <path fill-rule="evenodd"
@@ -22,19 +22,21 @@
         </div>
     </div>
     <!-- new list -->
-    <div>
+    <div class="flex flex-row justify-between items-center border p-3">
         <div>New list</div>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-                <path
-                    d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
-            </svg>
+        <div class="flex items-center">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                    <path
+                        d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+                </svg>
+            </div>
+            <div>Add</div>
         </div>
-        <div>Add</div>
     </div>
     <!-- to do  -->
-    <div>
-        <div>
+    <div class="flex flex-row justify-between items-center border p-3">
+        <div class="flex">
             <div>To-do</div>
             <div>4</div>
         </div>
@@ -47,15 +49,15 @@
         </div>
     </div>
     <!-- shopping list -->
-    <div>
+    <div class="flex flex-col justify-between items-center border">
         <!-- shopping list header -->
-        <div>
-            <div>
-                <div>Shopping list</div>
+        <div class="flex flex-row justify-between items-center w-full border px-3">
+            <div class="flex">
+                <div>Shopping list:</div>
                 <div>3</div>
             </div>
-            <div>
-                <div>
+            <div class="flex items-center">
+                <div class="flex items-center">
                     <div class="rounded-full">
                         <a href="#" role="button">
                             <img id="profile-image-3" class="rounded-full w-12"
@@ -64,7 +66,7 @@
                                 alt="profile picture 3" aria-hidden="true" data-noaft="">
                         </a>
                     </div>
-                    <div>profile image 2</div>
+                    <div>prof img 2</div>
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
@@ -76,10 +78,10 @@
             </div>
         </div>
         <!-- shopping list items -->
-        <div>
+        <div class="flex flex-col justify-between items-center w-full border">
             <!-- fist item -->
-            <div>
-                <div>
+            <div class="flex flex-row justify-between items-center w-full border px-3">
+                <div class="flex">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                             <path fill-rule="evenodd"
@@ -103,8 +105,8 @@
                 </div>
             </div>
             <!-- second item -->
-            <div>
-                <div>
+            <div class="flex flex-row justify-between items-center w-full border p-3">
+                <div class="flex">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
@@ -117,12 +119,12 @@
                     </div>
                 </div>
                 <div>
-                    empty profile picture
+                    prof img space
                 </div>
             </div>
             <!-- third item -->
-            <div>
-                <div>
+            <div class="flex flex-row justify-between items-center w-full border p-3">
+                <div class="flex">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
@@ -135,11 +137,11 @@
                     </div>
                 </div>
                 <div>
-                    empty profile picture
+                    prof img space
                 </div>
             </div>
             <!-- add list item -->
-            <div>
+            <div class="flex flex-row justify-between items-center w-full border p-3">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                         <path
