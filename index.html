@@ -24,7 +24,7 @@
     <!-- new list -->
     <div class="flex flex-row justify-between items-center border p-3">
         <div>New list</div>
-        <div class="flex items-center">
+        <div class="flex items-center" id="add-list">
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                     <path
@@ -38,7 +38,7 @@
     <div class="flex flex-row justify-between items-center border p-3">
         <div class="flex">
             <div>To-do</div>
-            <div>4</div>
+            <div></div>
         </div>
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
@@ -51,22 +51,22 @@
     <!-- shopping list -->
     <div class="flex flex-col justify-between items-center border">
         <!-- shopping list header -->
-        <div class="flex flex-row justify-between items-center w-full border px-3">
+        <div class="flex flex-row justify-between items-center w-full border p-3">
             <div class="flex">
                 <div>Shopping list:</div>
-                <div>3</div>
+                <div></div>
             </div>
             <div class="flex items-center">
                 <div class="flex items-center">
                     <div class="rounded-full">
                         <a href="#" role="button">
-                            <img id="profile-image-3" class="rounded-full w-12"
+                            <img id="profile-image-3" class="rounded-full w-6"
                                 src="https://lh3.googleusercontent.com/ogw/AOh-ky1WVKo6zW2dtPEbZxVQinmKHuvOduJfl-ADAjvExg=s32-c-mo"
                                 srcset="https://lh3.googleusercontent.com/ogw/AOh-ky1WVKo6zW2dtPEbZxVQinmKHuvOduJfl-ADAjvExg=s32-c-mo 1x, https://lh3.googleusercontent.com/ogw/AOh-ky1WVKo6zW2dtPEbZxVQinmKHuvOduJfl-ADAjvExg=s64-c-mo 2x "
                                 alt="profile picture 3" aria-hidden="true" data-noaft="">
                         </a>
                     </div>
-                    <div>prof img 2</div>
+                    <!-- <div>prof img 2</div> -->
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
@@ -80,7 +80,7 @@
         <!-- shopping list items -->
         <div class="flex flex-col justify-between items-center w-full border">
             <!-- fist item -->
-            <div class="flex flex-row justify-between items-center w-full border px-3">
+            <div class="flex flex-row justify-between items-center w-full border p-3">
                 <div class="flex">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -96,7 +96,7 @@
                 <div>
                     <div class="rounded-full">
                         <a href="#" role="button">
-                            <img id="profile-image-3" class="rounded-full w-12"
+                            <img id="profile-image-3" class="rounded-full w-6"
                                 src="https://lh3.googleusercontent.com/ogw/AOh-ky1WVKo6zW2dtPEbZxVQinmKHuvOduJfl-ADAjvExg=s32-c-mo"
                                 srcset="https://lh3.googleusercontent.com/ogw/AOh-ky1WVKo6zW2dtPEbZxVQinmKHuvOduJfl-ADAjvExg=s32-c-mo 1x, https://lh3.googleusercontent.com/ogw/AOh-ky1WVKo6zW2dtPEbZxVQinmKHuvOduJfl-ADAjvExg=s64-c-mo 2x "
                                 alt="profile picture 3" aria-hidden="true" data-noaft="">
@@ -119,7 +119,7 @@
                     </div>
                 </div>
                 <div>
-                    prof img space
+                    <!-- assigned profile space -->
                 </div>
             </div>
             <!-- third item -->
@@ -137,21 +137,32 @@
                     </div>
                 </div>
                 <div>
-                    prof img space
+                    <!-- assigned profile space -->
                 </div>
             </div>
+            <!-- added to list -->
+            <ul id="todoList" class="w-full"></ul>
             <!-- add list item -->
-            <div class="flex flex-row justify-between items-center w-full border p-3">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-                        <path
-                            d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
-                    </svg>
+            <form class="w-full">
+                <div class="flex flex-row justify-between items-center w-full border p-3">
+                    <div>
+                        <!-- + svg -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                            <path
+                                d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+                        </svg> -->
+                        <input type="text" id="task">
+                    </div>
+                    <div>
+                        <button type="button" onclick="addTask()">+ Add Item</button>
+                    </div>
                 </div>
-                <div>List item</div>
-            </div>
+            </form>
+
         </div>
+
     </div>
+    <script src="/src/index.js"></script>
 </body>
 
 </html>
