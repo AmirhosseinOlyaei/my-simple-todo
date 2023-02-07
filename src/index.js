@@ -2,11 +2,14 @@
 
 
 function addTask() {
+  // get all the elements that we need in javascript
+  // get the value of the input element and save as a variable
   const task = document.getElementById("task").value;
   const todoList = document.getElementById("todoList");
   const newTask = document.createElement("li");
   newTask.innerHTML = task + " <button onclick='deleteTask(this)'>Delete</button>";
   
+  // show in the HTML list section each item in list
   newTask.innerHTML =`
   <div class="flex flex-row justify-between items-center w-full border p-3">              
 
@@ -27,10 +30,13 @@ function addTask() {
       </div>
   </div>
   `
-  
+
+  // Add a single item to the table
   todoList.appendChild(newTask);
   document.getElementById("task").value = "";
 }
+
+// Remove single item from the list
 function deleteTask(task) {
   task.parentElement.parentElement.remove();
 }
