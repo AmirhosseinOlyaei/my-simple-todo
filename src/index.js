@@ -11,12 +11,12 @@ function addTask() {
   
   // show in the HTML list section each item in list
   newTask.innerHTML =`
-  <div class="flex flex-row justify-between items-center w-full border p-3">              
+  <div class="flex flex-row justify-between items-center w-full p-3">              
 
       <div class="flex">
           <div>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="w-6 h-6">
+                  stroke="currentColor" class="w-6 h-6 text-[#b0a8a7]">
                   <path stroke-linecap="round" stroke-linejoin="round"
                       d="M9 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>

@@ -10,10 +10,10 @@
     <title>My Simple ToDo</title>
 </head>
 
-<body class="bg-[#fdf5f3] m-2">
+<body class="bg-[#fdf5f3] m-2 font-light">
     <!-- lists -->
-    <div class="flex flex-row justify-between items-center border px-1 py-3">
-        <div>List</div>
+    <div class="flex flex-row justify-between items-center px-1 py-3 font-bold text-4xl">
+        <div>Lists</div>
         <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                 <path fill-rule="evenodd"
                     d="M2.24 6.8a.75.75 0 001.06-.04l1.95-2.1v8.59a.75.75 0 001.5 0V4.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0L2.2 5.74a.75.75 0 00.04 1.06zm8 6.4a.75.75 0 00-.04 1.06l3.25 3.5a.75.75 0 001.1 0l3.25-3.5a.75.75 0 10-1.1-1.02l-1.95 2.1V6.75a.75.75 0 00-1.5 0v8.59l-1.95-2.1a.75.75 0 00-1.06-.04z"
@@ -22,7 +22,7 @@
         </div>
     </div>
     <!-- new list -->
-    <div class="flex flex-row justify-between items-center border p-3">
+    <div class="flex flex-row justify-between items-center border rounded-xl my-1 p-3 text-[#b0a8a7]">
         <div>New list</div>
         <div class="flex items-center" id="add-list">
             <div>
@@ -35,7 +35,7 @@
         </div>
     </div>
     <!-- to do  -->
-    <div class="flex flex-row justify-between items-center border p-3">
+    <div class="flex flex-row justify-between items-center border rounded-xl my-1 p-3">
         <div class="flex">
             <div>To-do</div>
             <div></div>
@@ -49,9 +49,9 @@
         </div>
     </div>
     <!-- shopping list -->
-    <div class="flex flex-col justify-between items-center border">
+    <div class="flex flex-col justify-between items-center my-1">
         <!-- shopping list header -->
-        <div class="flex flex-row justify-between items-center w-full border p-3">
+        <div class="flex flex-row justify-between items-center w-full bg-[#fe6955] text-white rounded-xl p-3">
             <div class="flex">
                 <div>Shopping list:</div>
                 <div></div>
@@ -78,9 +78,9 @@
             </div>
         </div>
         <!-- shopping list items -->
-        <div class="flex flex-col justify-between items-center w-full border">
+        <div class="flex flex-col justify-between items-center w-full">
             <!-- fist item -->
-            <div class="flex flex-row justify-between items-center w-full border p-3">
+            <div class="flex flex-row justify-between items-center w-full p-3">
                 <div class="flex">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -89,8 +89,8 @@
                                 clip-rule="evenodd" />
                         </svg>
                     </div>
-                    <div>
-                        Bread
+                    <div class="text-[#b0a8a7]">
+                        <del>Bread</del>
                     </div>
                 </div>
                 <div>
@@ -105,11 +105,11 @@
                 </div>
             </div>
             <!-- second item -->
-            <div class="flex flex-row justify-between items-center w-full border p-3">
+            <div class="flex flex-row justify-between items-center w-full p-3">
                 <div class="flex">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
+                            stroke="currentColor" class="w-6 h-6 text-[#b0a8a7]">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M9 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
@@ -123,11 +123,11 @@
                 </div>
             </div>
             <!-- third item -->
-            <div class="flex flex-row justify-between items-center w-full border p-3">
+            <div class="flex flex-row justify-between items-center w-full p-3">
                 <div class="flex">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
+                            stroke="currentColor" class="w-6 h-6 text-[#b0a8a7]">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M9 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
@@ -144,7 +144,7 @@
             <ul id="todoList" class="w-full"></ul>
             <!-- add list item -->
             <form class="w-full">
-                <div class="flex flex-row justify-between items-center w-full border p-3">
+                <div class="flex flex-row justify-between items-center w-full border rounded-xl p-3">
                     <div>
                         <!-- + svg -->
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
@@ -153,7 +153,7 @@
                         </svg> -->
                         <input type="text" id="task">
                     </div>
-                    <div>
+                    <div class="text-[#b0a8a7]">
                         <button type="button" onclick="addTask()">+ Add Item</button>
                     </div>
                 </div>
