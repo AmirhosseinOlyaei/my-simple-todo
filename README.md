@@ -71,15 +71,17 @@ git push -u origin
 					- List 1  
 					- List 2  
 				- [ ] user can remove a list from the lists  
-				- [ ] when user adds an item to each list, item shows on that list  
-					- List 1  
-						- ~~Item 1~~  
+				- [x] when user adds an item to each list, item shows on that list  
+					- List 2  
+						- Item 1 
 						- Item 2  
-				- [ ] when user removes an item from each list, that list shows the rest of the items.  
+				- [x] when user removes an item from each list, that list shows the rest of the items.  
+					- List 2  
+						- Item 2  
 				- [ ] user can assign a person to each item in the list  
 				- [ ] if user checks an item, cross a line on the item name.  
 					- List 2  
-						- Item 1  
+						- ~~Item 1~~  
 						- Item 2  
 			- [x] Integrate with back-end  
 				- Deploy to Vercel  
